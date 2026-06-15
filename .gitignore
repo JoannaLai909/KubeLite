@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+venv/
+.venv/
+
+# DockDoctor 產生的報告
+dockdoctor-report.md
+dockdoctor-report.html
+
+# OS
+.DS_Store
