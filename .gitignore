@@ -1,15 +1,24 @@
 # Python
 __pycache__/
-*.py[cod]
-*.egg-info/
-
-# Virtual environment
-venv/
+*.pyc
+*.pyo
+*.pyd
 .venv/
+venv/
+env/
 
-# DockDoctor 產生的報告
-dockdoctor-report.md
-dockdoctor-report.html
+# Environment
+.env
+.env.local
 
-# OS
+# OS / Editor
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Docker / temp
+*.tmp

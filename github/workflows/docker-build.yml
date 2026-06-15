@@ -1,0 +1,20 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # TODO: Login to GitHub Container Registry
+      # TODO: Build api-gateway image
+      # TODO: Build calculator-service image
+      # TODO: Build message-service image
+      # TODO: Push images to GHCR
