@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from datetime import datetime, timezone
 
 app = Flask(__name__)
 
@@ -19,7 +20,10 @@ def index():
 def health():
     return jsonify({
         "service": SERVICE_NAME,
-        "status": "healthy"
+        "status": "healthy",
+        "version": VERSION,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+
     })
 
 
